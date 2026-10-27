@@ -1,0 +1,8 @@
+# mock 工程配置。字段名与真实 fcos 工程保持一致，
+# 这样 get_prj_params.py / get_det_classes 不用为 mock 写特例。
+MODEL_CONFIG:
+  OVERRIDE:
+    DETECTION_CLASSES:
+      - [head]
+    EVAL_OUTPUT_SIZE:
+      - [384, 256]

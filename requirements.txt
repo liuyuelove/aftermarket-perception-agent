@@ -1,0 +1,28 @@
+# 运行时
+langgraph>=0.6
+langgraph-cli[inmem]>=0.2
+langchain>=1.0
+langchain-core>=1.0
+
+# LLM 后端：DeepSeek / vLLM 走 openai 兼容协议，本地走 ollama
+langchain-openai>=1.0
+langchain-ollama>=1.0
+
+# 数据处理（抽帧、裁剪、透视变换、画框）
+opencv-python-headless>=4.9
+numpy>=1.26
+pillow>=10.0
+
+# 标注文件与配置
+lxml>=5.0
+pyyaml>=6.0
+
+# 数据下载
+requests>=2.31
+httpx>=0.27
+
+# 进度条
+tqdm>=4.66
+
+# 可选：视频拼接（仅 tools/lib/mp_video_proc.py 用到，未安装不影响主链路）
+# moviepy>=1.0.3

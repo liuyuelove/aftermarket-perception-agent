@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 测试
+.pytest_cache/
+.pytest_tmp*/
+
+# 本地配置（含 API key，不要提交）
+.env
+
+# LangGraph 本地开发缓存
+.langgraph_api/
+.langgraph_checkpoint.*.pckl
+
+# 运行产物：可再生产，不进版本库
+ai_results/
+ai_data/ftp_data/
+ai_data/extracted_data/
+data/training_logs/
+
+# 真实业务数据（车载视频抽帧 + 标注，含人脸）
+ai_data/images/
+ai_data/images_with_label/
+
+# 本地工具 / 记忆目录
+.workbuddy-ai/
+.vscode/
+
+# 旧实现归档（含内网 IP、客户名、旧架构图）
+_legacy/
+
+# 上传方案文档本身
+PUBLISH_PLAN.md
+
+# 视频与压缩包
+*.avi
+*.rar
+*.tar.gz
+
+# fcos 工程产物（真实工程与 mock 都一样）
+fcos/**/checkpoints/
+fcos/**/runs/
+fcos/**/results/
+fcos/**/eval_data/
+fcos/**/post_proc_results/
+fcos/**/saved_checkpoints/
+fcos/**/mode_convert/converted_models/
+
+# 调试图
+graph.png
+task_proc_graph.png
+
+# macOS
+.DS_Store
